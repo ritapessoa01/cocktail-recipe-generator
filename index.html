@@ -3,32 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="src/style.css" />
-    <title>Shake up something new 🍹</title>
+    <title>Cocktail Generator 🍹</title>
   </head>
   <body>
-    <div>
+    <div class="main-box">
       <header>
-        <h1>Shake up something new</h1>
+        <h1>SHAKE UP SOMETHING<br />NEW</h1>
       </header>
+
       <p>
         Want a drink but don’t know what to choose?
         <br />
         We’re here to help!
         <br />
-        Just tell us what your mood is and we’ll give you a recipe you’ll love
-        ❤️
+        Just tell us what your mood is and we’ll give you a recipe you’ll love!
       </p>
       <form>
-        <input type="text" placeholder="Sweet, strong, fruity ..." required />
+        <input
+          class="input"
+          type="text"
+          placeholder="Sweet, strong, fruity ..."
+          required
+        />
       </form>
-      <input type="submit" value="Generate my drink!" />
+      <input class="button" type="submit" value="Generate my drink!" />
     </div>
-    <div class="recipe">
-      <span>Mojito</span>Muddle the lime juice, sugar and mint leaves in a small
-      jug, crushing the mint as you go – you can use the end of a rolling pin
-      for this.
-    </div>
+    <div class="recipe-box"></div>
+
     <footer>
       Coded by
       <a href="https://github.com/ritapessoa01" target="_blank">Rita Pessoa</a>,
