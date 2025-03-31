@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Cocktail Generator 🍹</title>
   </head>
@@ -26,17 +26,18 @@
         <br />
         Just tell us what your mood is and we’ll give you a recipe you’ll love!
       </p>
-      <form>
+      <form id="cocktail-generator-form">
         <input
           class="input"
           type="text"
           placeholder="Sweet, strong, fruity ..."
           required
         />
+
+        <input class="button" type="submit" value="Generate my drink!" />
       </form>
-      <input class="button" type="submit" value="Generate my drink!" />
     </div>
-    <div class="recipe-box"></div>
+    <div class="cocktail-recipe" id="cocktail-recipe"></div>
 
     <footer>
       Coded by
