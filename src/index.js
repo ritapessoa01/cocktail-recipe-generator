@@ -19,6 +19,10 @@ function generateCocktail(event) {
     "You are an expert mixologist that loves making cocktails. Your misson is to write a recipe for a cocktail folowing the user instructions in basic HTLM format. Only write a title (in <h2>), the ingredients (in <strong>) and the instructions(in <strong>). Don't write '```html' at the top";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipeElement = document.querySelector("#cocktail-recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `⌛ Generating your ${instructionsInput.value} cocktail recipe...`;
+
   console.log("Generating Cocktail recipe");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);

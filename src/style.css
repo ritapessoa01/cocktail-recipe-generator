@@ -70,27 +70,34 @@ p {
 
 .cocktail-recipe {
   background-color: #efcead;
-  width: 800px;
+  width: 700px;
   margin: 10px auto;
   border-radius: 20px;
+  padding: 20px 50px;
+  font-size: 18px;
+  color: #571e0c;
+}
+
+.hidden {
+  display: none;
 }
 
 h2 {
+  text-align: center;
   color: #8e3216;
   font-size: 45px;
-  text-align: center;
   margin: 0 auto;
-  padding: 30px;
+  padding: 25px;
 }
 
 strong {
-  margin-left: 80px;
+  margin-left: 50px;
   font-size: 28px;
   color: #812c13;
 }
 
 li {
-  margin: 0px 95px;
+  margin: 0px 70px;
   font-size: 17px;
   line-height: 1.4;
 }
