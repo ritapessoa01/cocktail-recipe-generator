@@ -1,6 +1,4 @@
 function displayRecipe(response) {
-  console.log("Recipe generated");
-
   new Typewriter("#cocktail-recipe", {
     strings: response.data.answer,
     autoStart: true,
@@ -22,10 +20,6 @@ function generateCocktail(event) {
   let recipeElement = document.querySelector("#cocktail-recipe");
   recipeElement.classList.remove("hidden");
   recipeElement.innerHTML = `⌛ Generating your ${instructionsInput.value} cocktail recipe...`;
-
-  console.log("Generating Cocktail recipe");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiUrl).then(displayRecipe);
 }
