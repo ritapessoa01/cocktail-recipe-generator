@@ -3,7 +3,7 @@ body {
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: top;
-  background-color: #f0cdaf;
+  background-color: #efcead;
 }
 
 .main-box {
@@ -69,17 +69,37 @@ p {
 }
 
 .cocktail-recipe {
-  background-color: #f8e3c9;
+  background-color: #efcead;
   width: 800px;
   margin: 10px auto;
   border-radius: 20px;
+}
+
+h2 {
+  color: #8e3216;
+  font-size: 45px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+strong {
+  margin-left: 80px;
+  font-size: 28px;
+  color: #812c13;
+}
+
+li {
+  margin: 0px 95px;
+  font-size: 17px;
+  line-height: 1.4;
 }
 
 footer {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-align: center;
-  background-color: #f8e3c9;
+  background-color: #efcead;
   padding: 10px 18px;
   width: 470px;
   margin: 10px auto;
